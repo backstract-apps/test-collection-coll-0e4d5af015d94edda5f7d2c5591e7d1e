@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-collection-coll-0e4d5af015d94edda5f7d2c5591e7d1e-srv
+spec:
+  selector:
+    app: test-collection-coll-0e4d5af015d94edda5f7d2c5591e7d1e
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9030
+  type: ClusterIP
